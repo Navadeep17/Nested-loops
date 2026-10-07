@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loop Exercises</title>
+
+    <link rel="stylesheet" href="loopstyle.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Loop Exercises</h1>
+        <p>Enter the values and click the button to get the output</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. Prime Numbers -->
+        <div class="task-card">
+            <h2>1. Total of Prime Numbers</h2>
+            <p>Calculate the sum of all prime numbers within the given range.</p>
+
+            <div class="input-row">
+
+                <div class="input-group">
+                    <label for="startPrime">From</label>
+                    <input type="number" id="startPrime" value="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="endPrime">To</label>
+                    <input type="number" id="endPrime" value="100">
+                </div>
+
+            </div>
+
+            <button onclick="calculatePrimeSum()">Find Sum</button>
+
+            <div class="result" id="primeResult"></div>
+        </div>
+
+
+        <!-- 2. Perfect Numbers -->
+        <div class="task-card">
+            <h2>2. Mean of Perfect Numbers</h2>
+            <p>Calculate the average of all perfect numbers within the given range.</p>
+
+            <div class="input-row">
+
+                <div class="input-group">
+                    <label for="startPerfect">From</label>
+                    <input type="number" id="startPerfect" value="1">
+                </div>
+
+                <div class="input-group">
+                    <label for="endPerfect">To</label>
+                    <input type="number" id="endPerfect" value="500">
+                </div>
+
+            </div>
+
+            <button onclick="calculatePerfectAverage()">Find Average</button>
+
+            <div class="result" id="perfectResult"></div>
+        </div>
+
+
+        <!-- 3. Palindrome Numbers -->
+        <div class="task-card">
+            <h2>3. Palindrome Values</h2>
+            <p>Display all palindrome numbers available in the given range.</p>
+
+            <div class="input-row">
+
+                <div class="input-group">
+                    <label for="startPalindrome">From</label>
+                    <input type="number" id="startPalindrome" value="50">
+                </div>
+
+                <div class="input-group">
+                    <label for="endPalindrome">To</label>
+                    <input type="number" id="endPalindrome" value="400">
+                </div>
+
+            </div>
+
+            <button onclick="showPalindromeNumbers()">Show Numbers</button>
+
+            <div class="result" id="palindromeResult"></div>
+        </div>
+
+
+        <!-- 4. Exactly 3 Factors -->
+        <div class="task-card">
+            <h2>4. Numbers Having 3 Factors</h2>
+            <p>Display numbers that contain exactly three factors.</p>
+
+            <div class="input-row">
+
+                <div class="input-group">
+                    <label for="startFactors">From</label>
+                    <input type="number" id="startFactors" value="5">
+                </div>
+
+                <div class="input-group">
+                    <label for="endFactors">To</label>
+                    <input type="number" id="endFactors" value="200">
+                </div>
+
+            </div>
+
+            <button onclick="showThreeFactorNumbers()">Show Numbers</button>
+
+            <div class="result" id="factorResult"></div>
+        </div>
+
+
+        <!-- 5. Maximum Factors -->
+        <div class="task-card">
+            <h2>5. Maximum Factor Number</h2>
+            <p>Find the number having the highest number of factors in the given range.</p>
+
+            <div class="input-row">
+
+                <div class="input-group">
+                    <label for="startMaximum">From</label>
+                    <input type="number" id="startMaximum" value="20">
+                </div>
+
+                <div class="input-group">
+                    <label for="endMaximum">To</label>
+                    <input type="number" id="endMaximum" value="120">
+                </div>
+
+            </div>
+
+            <button onclick="findMaximumFactorNumber()">Find Number</button>
+
+            <div class="result" id="maximumResult"></div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="loopscript.js"></script>
+
+</body>
+
+</html>
+
